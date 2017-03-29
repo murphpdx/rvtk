@@ -1,0 +1,24 @@
+/* app css stylesheet */
+
+.graphicsBoard {
+    display: inline-block;
+    width: 1480px;
+}
+
+.graphics {
+    float: left;
+}
+
+.button {
+    background-color: #043d99; 
+    width: 100px;
+    height: 30px;
+    float: left;
+    color: #FFF;
+}
+
+.button-menu {
+    display: inline-block;
+    width: 560px;
+}
+
