@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Rocket View 3000</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
@@ -17,9 +17,11 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+  <script src="controllers/navigation-controller.js"></script>
   <script src="directives/onboardCam.js"></script>
   <script src="directives/vehicleAttitude.js"></script>
   <script src="directives/efv.js"></script>
+  <script src="directives/buttonMenu.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
@@ -27,21 +29,19 @@
 </head>
 
 
-<body>
+<body ng-init='VisibleCamera = true'>
 
-    <div class="topBar">
+    <div class="topBar" ng-init='initialise()'>
         <img src="imgs/PSASLogo.png" />
     </div>
 
-    <div class="graphicsBoard"> 
-<!--        <div class="button-menu" >
-            <div id="camera1" class="button">Camera 1<div>
-            <div id="camera2" class="button">Camera 2<div>
-        </div>
--->
+    <button-menu></button-menu>
 
+    <div class="graphicsBoard"> 
         <div class="graphics" ><efv></efv></div>
-        <div class="graphics" ><onboard-camera> </onboard-camera></div>
+        <div class="graphics" >
+            <onboard-camera> </onboard-camera>
+        </div>
         <div class="graphics" ><vehicle></vehicle></div>
     </div>
     

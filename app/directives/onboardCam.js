@@ -3,7 +3,7 @@
 angular.module("rvtk").directive("onboardCamera", function() {
     return {
         restrict: 'E',
-        scope: {},
+        scope: { VisibleCamera: '=' },
         templateUrl: 'directives/onboardCam.html'
     };
 });

@@ -10,15 +10,17 @@
 }
 
 .button {
-    background-color: #043d99; 
-    width: 100px;
-    height: 30px;
     float: left;
-    color: #FFF;
+    color: #777;
+    padding: 10px;
+}
+
+.button:hover {
+    color: #000;
 }
 
 .button-menu {
     display: inline-block;
-    width: 560px;
+    width: 1480px;
 }
 
