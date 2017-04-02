@@ -85,6 +85,9 @@ app/                    --> all of the source files for the application
     efv.html            --> the partial template
     efv.js              --> the directive logic
   controllers/                --> controllers folder (controllers - business logic)
+    efv-controller.js        --> this handles feeding data into the the pluggin that creates the efv (possibly do calculations on data)
+    camera-controller.js     --> this handles the logic of what camera is visible and bringing the feeds into the application
+    vehicleAttitude-contoller.js    -> feeds data into the vehicle attitude graphic and may do calculations to the raw data
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
 karma.conf.js         --> config file for running unit tests with Karma
